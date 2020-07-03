@@ -1,0 +1,36 @@
+@import "variables";
+@import "reset";
+
+* {
+  font-family: "Noto Sans TC", "微軟正黑體", sans-serif;
+  box-sizing: border-box;
+  color: $text;
+}
+
+html,
+body {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: $primary;
+}
+
+// Navbar------------------------------------------------
+
+#nav {
+  background: $success;
+
+  .navbar {
+    width: 100vmax;
+  }
+
+  .navbar-nav {
+    align-items: flex-end;
+    svg {
+      width: 20px;
+      height: 16px;
+      margin-left: 1rem;
+    }
+  }
+}
